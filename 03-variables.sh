@@ -10,7 +10,5 @@ echo " $PERSON1: how are you ? "
 echo " $PERSON2: FINE  ,"
 
 
-echo " $PERSON1: how are you ? "
-
 
 
