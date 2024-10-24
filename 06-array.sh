@@ -7,3 +7,7 @@ echo " second movie name is: ${MOVIES[1]} "
 echo " Third movie name is : ${MOVIES[2]} "
 
 echo " All best movies of ramcharan : ${MOVIES[@]} "
+
+echo "$0 "
+echo "$PWD "
+echo "$ "
