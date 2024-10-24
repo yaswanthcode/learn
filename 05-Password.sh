@@ -1,11 +1,20 @@
 #!/bin/bash
 
+#writing script for taking password
+#echo " Enter username :"
+#read USERNAME
+#echo " Enter Password :"
+#read PASSWORD
+
+#echo " Username is $USERNAME "
+#echo " Password is $PASSWORD ")
+
+#Now we are hiding password while enetering 
 echo " Enter username :"
-read USERNAME
+read -s USERNAME
 echo " Enter Password :"
-read PASSWORD
+read -s PASSWORD
 
 echo " Username is $USERNAME "
-echo " Password is $PASSWORD "
+echo " Password is $PASSWORD ")
 
-#writing script for taking password
