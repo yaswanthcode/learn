@@ -9,7 +9,7 @@
 #echo " Username is $USERNAME "
 #echo " Password is $PASSWORD ")
 
-#Now we are hiding password while enetering 
+#Now we are hiding password while entering 
 echo " Enter username :"
 read -s USERNAME
 echo " Enter Password :"
