@@ -1,9 +1,9 @@
 #!/bin/bash 
 
-PERSON1=$P1 
-PERSON2=$P2 
+PERSON1=$1 
+PERSON2=$2 
 
-echo " $P1 "
-echo " $P2 "
+echo " $PERSON1 "
+echo " $PERSON2 "
 
 #here we are trying to pass parameters in commandline 
