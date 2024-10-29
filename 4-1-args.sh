@@ -4,10 +4,11 @@ PERSON1=$1
 PERSON2=$2 
 
 echo " $@ "
-
-echo "Pass arguments"
-
-echo "This is the first person name $PERSON1 "
-echo "This is the second person name $PERSON2 "
-
+if [ $@ -ne 0]
+then
+    echo -e /e[32m"Pass arguments"
+else
+    echo "This is the first person name $PERSON1 "
+    echo "This is the second person name $PERSON2 "
+fi
 #here we are trying to pass parameters in commandline 
