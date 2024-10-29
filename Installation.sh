@@ -9,10 +9,10 @@ echo "$USERID "
 
 if [ $USERID -ne 0 ] 
 then 
-    echo " $R Please run this programme with root access $N"
+    echo -e "$R Please run this programme with root access $N"
     exit 1
 else
-    echo  -e " $G This user is a super user $N"
+    echo -e "$G This user is a super user $N"
 fi 
 
 dnf install mysql -y 
