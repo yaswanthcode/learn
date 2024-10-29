@@ -1,15 +1,18 @@
 #!/bin/bash
 
 USERID=$(id -u)
+R=\e[31m
+G=\e[32m
+N=\e[0m
 
 echo "$USERID "
 
 if [ $USERID -ne 0 ] 
 then 
-    echo "\e[31mPlease run this programme with root access \e[0m"
+    echo " $R Please run this programme with root access $N"
     exit 1
 else
-    echo  -e " \e[32m This user is a super user"
+    echo  -e " $G This user is a super user $N"
 fi 
 
 dnf install mysql -y 
