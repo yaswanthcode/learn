@@ -4,7 +4,7 @@ PERSON1=$1
 PERSON2=$2 
 
 echo " $@ "
-if [$@ -ne 0]
+if [$@ -eq 0]
 then
     echo -e /e[32m"Pass arguments"
 else
