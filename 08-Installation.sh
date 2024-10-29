@@ -2,6 +2,8 @@
 
 USERID=$(id -u)
 
+echo "User ID is : $USERID"
+
 if [ $USERID -ne 0 ]
 then
     echo "Please run this script with root access."
@@ -30,4 +32,4 @@ else
     echo "Installation of Git...SUCCESS"
 fi
 
-echo "is script proceeding?"
+echo "script is proceeding..."
