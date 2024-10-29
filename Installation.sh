@@ -5,8 +5,8 @@ R="\e[31m"
 G="\e[32m"
 N="\e[0m"
 TIMESTAMP=$(date +%F/%H.%M.%S)
-SCRIPT_NAME=$(echo $0 | cut -d "." -F1)
-LOGFILE=/home/ec2-user/learn/$SCRIPT_NAME-$TIMESTAMP.log
+SCRIPT_NAME=$(echo $0 | cut -d "." -f1)
+LOGFILE=/tmp/$SCRIPT_NAME-$TIMESTAMP.log
 
 echo "log file created $LOGFILE"
 
