@@ -2,6 +2,12 @@
 
 set -e 
 
+failure(){
+    echo " Failed at line $1 , with error $2 "
+}
+
+trap 'failure ${LINENO} "$BASH_COMMAND"' ERR
+
 USERID=$(id -u)
 R="\e[31m"
 G="\e[32m"
