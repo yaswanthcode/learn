@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e 
+
 SOURCE_FILE="/learn/doc.txt"
 
 no_lines=' wc --lines < $SOURCE_FILE '
