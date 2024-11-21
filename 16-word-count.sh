@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/bash
 
 source="/tmp/app-logs/doc.txt"
 
@@ -7,7 +7,7 @@ no_lines='wc --lines < $source'
 no_words='wc --word < $source'
 
 echo "No of lines : $no_lines "
-echo "No of words : $n0_words "
+echo "No of words : $no_words "
 
 #!/usr/bin/bash
 
