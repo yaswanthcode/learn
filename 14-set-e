@@ -18,6 +18,6 @@ else
 fi 
 
 
-dnf install mysqll -y 
+dnf install myyysqll -y 
 
 dnf install gitt -y
