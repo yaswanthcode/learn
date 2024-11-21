@@ -18,4 +18,9 @@ then
     echo -e " $G Directory exists $N "
 else
     echo -e " $R Check the directory name $N "
+    exit 1
 fi
+
+FILES=$(find $SOURCE_DIRECTORY -name "*.log" -mtime +14 )
+
+echo " Files to be deleted are : $FILES "
