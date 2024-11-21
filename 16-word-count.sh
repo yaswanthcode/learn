@@ -1,13 +1,26 @@
-#!/bin/bash
+#!/usr/bin/bash
 
 source="/tmp/app-logs/doc.txt"
 
+# Correctly capturing the output of wc commands
+no_lines=$(wc -l < "$source")   # Count lines
+no_words=$(wc -w < "$source")   # Count words
 
-no_lines='wc --lines < $source'
-no_words='wc --word < $source'
+# Output the results
+echo "No of lines: $no_lines"
+echo "No of words: $no_words"
 
-echo "No of lines : $no_lines "
-echo "No of words : $no_words "
+
+#!/bin/bash
+
+#source="/tmp/app-logs/doc.txt"
+
+
+#no_lines='wc --lines < $source'
+#no_words='wc --word < $source'
+
+#echo "No of lines : $no_lines "
+#echo "No of words : $no_words "
 
 #!/usr/bin/bash
 
