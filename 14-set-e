@@ -5,7 +5,7 @@ R="\e[31m"
 G="\e[32m"
 N="\e[0m"
 
-echo " $G Green $R Red $N "
+echo -e " $G Green $R Red $N "
 
 echo "User Id :$USERID "
 
