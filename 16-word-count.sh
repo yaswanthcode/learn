@@ -62,4 +62,3 @@ word_count=$(grep -o -i "\b$search_word\b" "$source" | wc -l)
 echo "No of lines: $no_lines"
 echo "No of words: $no_words"
 echo "The word '$search_word' appears '$word_count' times in the file."
-
