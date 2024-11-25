@@ -12,7 +12,6 @@ do
         MESSAGE+=$( $FOLDER IS MORE THAN $DISK_FULL , Current usage : $USAGE)
     fi 
 
-done
-
+done <<< $DISK
 
 echo " $MESSAGE "
