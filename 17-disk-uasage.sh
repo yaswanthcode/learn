@@ -3,7 +3,7 @@
 DISK=$(df -hT | grep xfs)
 DISK_FULL=4
 
-while IFS = read -r line 
+while IFS= read -r line 
 do
     USAGE=$(echo $line | awk -F " " { print $6F}| cut -d "%" -f1)
     FOLDER=$(echo $line | awk -F " " {print $NF})
