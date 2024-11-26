@@ -1,0 +1,6 @@
+- name: conditions
+  hosts: localhosts
+  tasks:
+  - name: conditions
+    ansible.builtin.debug: id expense
+      msg: "Hi am I getting executed"
