@@ -1,10 +1,11 @@
 - name: Multiple plays
+  hosts: localhosts
   tasks:
     - name: Play 1 and task 1
       ansible.inbuilt.debud:
         msg: "This message is from play 1 and task 1"
 
-- name: Multiple plays
+- name: Multiple plays 2
   tasks:
     - name: Play 2 and task 1
       ansible.inbuilt.debud:
