@@ -1,0 +1,9 @@
+- name: declaring at args
+  hosts: localhosts
+  tasks:
+  - name: arguments
+    ansible.builtin.debug:
+      msg: "This {{Course}} is my life"
+
+
+
