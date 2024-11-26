@@ -1,0 +1,14 @@
+- name: Declaring Variables in prompt
+  hosts: localhosts
+  vars_prompt:
+  - name: USERNAME
+    prompt: Enter Username
+    private: false
+  - name: PASSWORD
+    prompt: Enter Password
+    private: true
+
+  tasks:
+  - name: variables calling from prompt
+    ansible.builtin.debug:
+      msg: "My Credentials are Useranme: {{USERNAME}} PASSWORD: {{PASSWORD}}"
