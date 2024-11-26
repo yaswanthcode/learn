@@ -2,13 +2,13 @@
   hosts: localhosts
   tasks:
   - name: Play 1 and task 1
-    ansible.inbuilt.debud:
+    ansible.inbuilt.debug:
       msg: "This message is from play 1 and task 1"
 
 - name: Multiple plays 2
   hosts: localhosts
   tasks:
   - name: Play 2 and task 1
-    ansible.inbuilt.debud:
+    ansible.inbuilt.debug:
       msg: "This message is from play 2 and task 1"
 
