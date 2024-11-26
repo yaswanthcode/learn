@@ -1,11 +1,11 @@
-- name: Multiple plays
+- name: play 1
   hosts: localhosts
   tasks:
   - name: Play 1 and task 1
     ansible.builtin.debug:
       msg: "This message is from play 1 and task 1"
 
-- name: Multiple plays 2
+- name: play 2
   hosts: localhosts
   tasks:
   - name: Play 2 and task 1
