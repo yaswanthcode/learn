@@ -1,6 +1,6 @@
 - name: Devlaring Variables in play level
   hosts: localhosts
-  vars_file:
+  vars_files:
   - varfile.yaml
   tasks:
   - name: variables calling
