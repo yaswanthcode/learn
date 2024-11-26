@@ -3,7 +3,7 @@
   become: yes
   tasks:
   - name: conditions
-    ansible.builtin.debug: id expense
+    ansible.builtin.command: id expense
    
   - name: say Hi
     ansible.builtin.debug:
