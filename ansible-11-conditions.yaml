@@ -3,4 +3,5 @@
   tasks:
   - name: conditions
     ansible.builtin.debug: id expense
+    ignore_errors:
       msg: "Hi am I getting executed"
