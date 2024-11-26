@@ -5,5 +5,9 @@
     ansible.builtin.debug:
       msg: "This {{Course}} is my life"
 
+# We can pass arhuments in the both following ways
+# --extra-vars "Course=Devops"
+# or
+# -e "Course=Devops"
 
 

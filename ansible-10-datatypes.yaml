@@ -1,0 +1,17 @@
+- name: Data types in YAML script
+  hosts: localhosts
+  vars:
+    Course: " Devops with AWS " #String
+    Tools:                      #List
+    - Linux
+    - Shell
+    - Ansible
+    Experience:                  #Map/dictionary
+      Devops: 3                  #number
+      SAP: 3
+      Total: 3
+    Project: true                 #boolean
+    tasks:
+    - name: calling datatypes
+      ansible.builtin.debud:
+        msg: "This is the {{Course}}, where you use {{Tools}} as having {{Experience}} in real time {{Project}}."
