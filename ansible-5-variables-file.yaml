@@ -1,8 +1,8 @@
-- name: Devlaring Variables in play level
+- name: Declaring Variables in files
   hosts: localhosts
   vars_files:
   - varfile.yaml
   tasks:
   - name: variables calling
     ansible.builtin.debug:
-      msg: "I am learning {{course}} from the trainer {{trainer}}"
+      msg: "I am learning {{Course}} from the trainer {{Trainer}}"
