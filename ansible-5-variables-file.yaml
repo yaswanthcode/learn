@@ -1,0 +1,8 @@
+- name: Devlaring Variables in play level
+  hosts: localhosts
+  vars_file:
+  - varfile.yaml
+  tasks:
+  - name: variables calling
+    ansible.builtin.debug:
+      msg: "I am learning {{course}} from the trainer {{trainer}}"
