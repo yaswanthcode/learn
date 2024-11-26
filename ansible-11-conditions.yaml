@@ -1,7 +1,10 @@
 - name: conditions
   hosts: localhosts
+  become: yes
   tasks:
   - name: conditions
     ansible.builtin.debug: id expense
-    ignore_errors:
+   
+  - name: say Hi
+    ansible.builtin.debug:
       msg: "Hi am I getting executed"
