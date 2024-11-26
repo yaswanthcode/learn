@@ -1,0 +1,9 @@
+- name: calling variables from inventory file
+  hosts: localhosts
+  tasks:
+  - name: calling
+    ansible.builtin.debug:
+      msg: "This {{Course}} is my life"
+
+
+
