@@ -1,0 +1,12 @@
+- name: Multiple plays
+  tasks:
+    - name: Play 1 and task 1
+      ansible.inbuilt.debud:
+        msg: "This message is from play 1 and task 1"
+
+- name: Multiple plays
+  tasks:
+    - name: Play 2 and task 1
+      ansible.inbuilt.debud:
+        msg: "This message is from play 2 and task 1"
+
