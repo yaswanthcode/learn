@@ -4,8 +4,9 @@
   tasks:
   - name: conditions
     ansible.builtin.command: id expense
+    register: USER
     ignore_errors: true
-   
-  - name: say Hi
+
+  - name: printing register variable
     ansible.builtin.debug:
-      msg: "Hi am I getting executed"
+      msg: "printing data: {{USER}}"
