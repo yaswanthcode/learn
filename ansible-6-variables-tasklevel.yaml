@@ -4,16 +4,15 @@
     course: "DevOps with AWS"
     trainer: "siva kumar"
 
-  - tasks:
-    - name: variables calling from task level
-      hosts: localhosts
-      vars:
-        course: "Terraform"
-        trainer: "siva kumar"
-        ansible.builtin.debug:
-          msg: "I am learning {{course}} from the trainer {{trainer}}"
+  tasks:
+  - name: variables calling from task level
+    hosts: localhosts
+    vars:
+      course: "Terraform"
+      trainer: "siva kumar"
+    ansible.builtin.debug:
+      msg: "I am learning {{course}} from the trainer {{trainer}}"
 
-  - tasks:
-    - name: variables calling from play level
-      ansible.builtin.debug:
-        msg: "I am learning {{course}} from the trainer {{trainer}}"
+  - name: variables calling from play level
+    ansible.builtin.debug:
+      msg: "I am learning {{course}} from the trainer {{trainer}}"
