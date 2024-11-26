@@ -1,5 +1,5 @@
 - name: ping the server
   hosts: web
   tasts: 
-    - name: pinging the server
-      ansible.builtin.ping:
+  - name: pinging the server
+    ansible.builtin.ping:
