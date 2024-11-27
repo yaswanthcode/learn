@@ -1,9 +1,9 @@
 - name: demo on loop
   hosts: localhosts
-  task:
+  tasks:
   - name: print list of items
     ansible.builtin.debug:
-      msg: " OS'S are {{ item }}"
+      msg: " OS'S are {{item}}"
     loop:
     - linux
     - windows
