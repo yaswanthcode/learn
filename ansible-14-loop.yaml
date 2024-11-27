@@ -5,6 +5,6 @@
     ansible.builtin.debug:
       msg: " OS'S are {{ item }}"
     loop:
-      linux
-      windows
-      mac
+    - linux
+    - windows
+    - mac
