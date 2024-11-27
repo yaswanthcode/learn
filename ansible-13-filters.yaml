@@ -22,3 +22,12 @@
   - name: convert to lowercase
     ansible.builtin.debug:
       msg: "before applying filter - {{Greetings}}, In lower case:  {{Greetings | lower}}"
+
+- name: Unique
+  hosts: localhosts
+  vars:
+    num: [1,2,3,2,4,3,5,9,1,2,3,4,5]
+  tasks:
+  - name: eliminating same numbers
+    ansible.builtin.debug:
+      msg: "unique   {{num | unique}}"
