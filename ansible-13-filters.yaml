@@ -58,3 +58,22 @@
   - name: after converting 
     ansible.builtin.debug:
       msg: "after converting {{ my_dict | dict2items }}"
+
+- name: Coverting list items to dictionary 
+  hosts: localhosts
+  vars:
+    my_list:
+      - {'key': 'trainer', 'value': 'sivakumar'} 
+      - {'key': 'course', 'value': 'Devops'} 
+      - {'key': 'Duration', 'value': '4-months'}
+      
+  tasks:
+  - name: before converting 
+    ansible.builtin.debug:
+      msg: "Before converting {{ my_list }}"
+  - name: after converting 
+    ansible.builtin.debug:
+      msg: "after converting {{ my_list | items2dict }}"
+
+
+
