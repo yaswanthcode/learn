@@ -4,7 +4,7 @@
   tasks:
   - name: using loops
     ansible.builtin.dnf:
-     name: "{{ items }}"
+     name: "{{ item }}"
      state: latest
     loop:
     - mysql
