@@ -3,7 +3,7 @@
   tasks:
   - name: print list of items
     ansible.builtin.debug:
-      msg: " OS'S are {{item}}"
+      msg: " My fav OS'S are {{item}}"
     loop:
     - linux
     - windows
