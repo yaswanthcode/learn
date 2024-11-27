@@ -12,7 +12,7 @@
   tasks:
   - name: uppercase
     ansible.builtin.debug:
-      msg: " {{Greetings | upper}}"
+      msg: " before applying filter {{Greetings}} \n In upper case: {{Greetings | upper}}"
 
 - name: lower case
   hosts: localhosts
