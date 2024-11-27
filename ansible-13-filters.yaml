@@ -31,3 +31,15 @@
   - name: eliminating same numbers
     ansible.builtin.debug:
       msg: "unique   {{num | unique}}"
+
+- name: Min and max values
+  hosts: localhosts
+  vars:
+    ages: [18,21,32,22,41,32,52,92,19,23,36,47,59]
+  tasks:
+  - name: min
+    ansible.builtin.debug:
+      msg: " Minimum age to vote:  {{ages | min}}"
+  - name: max
+    ansible.builtin.debug:
+      msg: " oldest person by age :  {{ages | max}}"
