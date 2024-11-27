@@ -1,0 +1,10 @@
+- name: demo on loop
+  hosts: localhosts
+  task:
+  - name: print list of items
+    ansible.builtin.debug:
+      msg: " OS'S are {{ item }}"
+    loop:
+      linux
+      windows
+      mac
