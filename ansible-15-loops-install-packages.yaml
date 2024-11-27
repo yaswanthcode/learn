@@ -4,10 +4,9 @@
   tasks:
   - name: using loops
     ansible.builtin.dnf:
-     name: {{ items }}
+     name: "{{ items }}"
      state: latest
     loop:
     - mysql
     - nginx
     - postfix
-    
