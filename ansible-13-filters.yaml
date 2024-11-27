@@ -43,3 +43,18 @@
   - name: max
     ansible.builtin.debug:
       msg: " oldest person by age :  {{ages | max}}"
+
+- name: Coverting dictionary to list items
+  hosts: localhosts
+  vars:
+    my_dict:
+      trainer: sivakumar
+      course: Devops
+      Duration: 4-months
+  tasks:
+  - name: before converting 
+    ansible.builtin.debug:
+      msg: "Before converting {{ my_dict }}"
+  - name: after converting 
+    ansible.builtin.debug:
+      msg: "after converting {{ my_dict | dict2items }}"
